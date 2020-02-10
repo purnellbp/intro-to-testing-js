@@ -46,5 +46,7 @@ describe("sayHello", function () {
     it('should return \'Hello, World!\' when input is null', function () {
         expect(sayHello(null)).toBe("Hello, World!");
     });
-
+    it('should return \'Hello, World!\' when input is an empty string', function () {
+        expect(sayHello("")).toBe("Hello, World!");
+    });
 });
