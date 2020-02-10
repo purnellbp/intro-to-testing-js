@@ -43,5 +43,8 @@ describe("sayHello", function () {
     it('should return \'Hello, World!\' when input is a number', function () {
         expect(sayHello(2.3)).toBe("Hello, World!");
     });
+    it('should return \'Hello, World!\' when input is null', function () {
+        expect(sayHello(null)).toBe("Hello, World!");
+    });
 
 });
