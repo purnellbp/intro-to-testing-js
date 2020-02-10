@@ -4,14 +4,18 @@ function helloWorld() {
 }
 
 function sayHello(input) {
-    if (input === undefined) {
-        return "Hello, World!";
-    } else if (input === true) {
-        return "Hello, World!";
-    } else if (input === false) {
-        return "Hello, World!";
+    if (isNaN(input)) {
+        if (input === true) {
+            return "Hello, World!";
+        } else if (input === false) {
+            return "Hello, World!";
+        } else if (input === undefined) {
+            return "Hello, World!";
+        } else {
+            return "Hello, " + input + "!";
+        }
     } else {
-        return "Hello, " + input + "!";
+        return "Hello, World!";
     }
 }
 
